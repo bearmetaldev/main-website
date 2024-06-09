@@ -109,4 +109,4 @@ jobs:
       - name: Deploy to staging environment
         id: deployment
         run:
-          rsync -re ssh ./frontend/.next/ dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/.next
+          rsync -r -e "ssh -i ~/.ssh/id_rsa" ./frontend/.next/ dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/.next

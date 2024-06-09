@@ -95,7 +95,9 @@ jobs:
     steps:
       - name: Download build
         uses: actions/download-artifact@v4
-
+        with:
+          name: nextjs-app
+          path: ./nextjs-app
 
       - name: Prepare SSH key
         run: |
@@ -109,4 +111,4 @@ jobs:
       - name: Deploy to staging environment
         id: deployment
         run:
-          rsync -r -e "ssh -i ~/.ssh/id_rsa" ./frontend/.next/ dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/.next
+          rsync -r -e "ssh -i ~/.ssh/id_rsa" ./nextjs-app/.next/ dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/.next

@@ -106,7 +106,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
 
-      - name: Deploy to test server
+      - name: Deploy to staging environment
         id: deployment
         run:
-          rsync -re ssh ./frontend/.next/ ${{secrets.user}}@staging.bearmetaldev.com:~/bearmetaldev.com/staging/.next
+          rsync -re ssh ./frontend/.next/ dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/.next

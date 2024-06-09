@@ -109,4 +109,4 @@ jobs:
       - name: Deploy to test server
         id: deployment
         run:
-          rsync -re ssh ./frontend/.next/ vps:/home/dev/bearmetaldev.com/staging/.next
+          rsync -re ssh ./frontend/.next/ ${{secrets.user}}@bearmetaldev.com:~/bearmetaldev.com/staging/.next

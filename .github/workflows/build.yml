@@ -116,5 +116,6 @@ jobs:
       - name: Deploy to staging environment
         id: deployment
         run: |
+          ssh dev@staging.bearmetaldev.com mkdir -p /home/dev/bearmetaldev.com/staging
           rsync -r -e "ssh -i ~/.ssh/id_rsa" build/docker/bearmetaldev-site.tar dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/bearmetaldev-site.tar
           docker load -i /home/dev/bearmetaldev.com/staging/bearmetaldev-site.tar

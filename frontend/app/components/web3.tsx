@@ -1,7 +1,7 @@
 export default function Web3() {
   return (
     <div
-      className="hero min-h-fit p-20 bg-bottom bg-cover bg-no-repeat"
+      className="hero min-h-[40rem]  p-20 bg-bottom bg-cover bg-no-repeat"
       style={{
         background: `linear-gradient(90deg, #0F111A 31.81%, rgba(15, 17, 26, 0.28) 66.36%, rgba(15, 17, 26, 0.00) 79.76%), url('/web3.jpg')`,
       }}

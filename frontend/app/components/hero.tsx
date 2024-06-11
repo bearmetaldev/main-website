@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div
-      className="hero min-h-fit p-10"
+      className="hero min-h-[40rem] p-10"
       style={{
         background: `linear-gradient(0deg, rgba(15, 17, 26, 0.71) 0%, rgba(15, 17, 26, 0.71) 100%), url('/hero-code-1.jpg')`,
         backgroundPosition: "center",

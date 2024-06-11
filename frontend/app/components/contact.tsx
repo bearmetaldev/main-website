@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="pb-20 bg-transparent text-center">
       <h1 className="mb-5 text-5xl font-bold">CONTACT</h1>
       <div className="flex justify-center m-24">
-        <div className="card w-auto h-auto bg-gradient-to-br from-slate-900 to-transparent shadow-lg place-items-center">
+        <div className="card w-auto h-auto bg-gradient-to-br from-indigo-950 to-transparent shadow-lg place-items-center">
           <div className="columns-2 flex items-center justify-center">
             <div className="text-left p-8">
               <div className="font-semibold">Email</div>

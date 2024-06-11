@@ -3,7 +3,7 @@ export default function Trainings() {
     <div className="p-20 bg-transparent text-center">
       <h1 className="mb-5">TRAININGS</h1>
       <div className="columns-2 flex items-center justify-center space-x-28 m-24">
-        <div className="card w-80 h-auto bg-gradient-to-br from-indigo-950 to-transparent shadow-lg place-items-center">
+        <div className="card w-auto h-auto bg-gradient-to-br from-indigo-950 to-transparent shadow-lg place-items-center">
           <figure className="pt-10 size-40">
             <img src="/rust-logo.png" alt="rust-logo" className="rounded-xl" />
           </figure>
@@ -19,7 +19,7 @@ export default function Trainings() {
             <div className="card-actions"></div>
           </div>
         </div>
-        <div className="card w-80 h-auto bg-gradient-to-br from-indigo-950 to-transparent shadow-lg place-items-center">
+        <div className="card w-auto h-auto bg-gradient-to-br from-indigo-950 to-transparent shadow-lg place-items-center">
           <figure className="pt-10 size-40">
             <img src="/git-logo.png" alt="git-logo" className="rounded-xl" />
           </figure>

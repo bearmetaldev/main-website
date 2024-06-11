@@ -1,9 +1,7 @@
 export default function Trainings() {
   return (
-    <div className="p-20 bg-transparent">
-      <div className="text-center">
-        <h1 className="mb-5 text-5xl font-bold">TRAININGS</h1>
-      </div>
+    <div className="p-20 bg-transparent text-center">
+      <h1 className="mb-5 text-5xl font-bold">TRAININGS</h1>
       <div className="columns-2 flex items-center justify-center space-x-28 m-24">
         <div className="card w-80 h-auto bg-gradient-to-br from-slate-900 to-transparent shadow-lg place-items-center">
           <figure className="pt-10 size-40">

@@ -3,6 +3,7 @@ import Web3 from "./components/web3";
 import Engineering from "./components/engineering";
 import Trainings from "./components/trainings";
 import Contact from "./components/contact";
+import Navbar from "./components/navbar";
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       className="bg-cover bg-center bg-no-repeat min-h-screen"
       style={{ backgroundImage: "url('/background.png')" }}
     >
+      <Navbar />
       <Hero />
       <Web3 />
       <Engineering />

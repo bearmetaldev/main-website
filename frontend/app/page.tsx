@@ -1,5 +1,18 @@
-export default function Page(): any {
+import Hero from "./components/hero";
+import Web3 from "./components/web3";
+import Engineering from "./components/engineering";
+import Trainings from "./components/trainings";
+
+export default function Page() {
   return (
-    <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+    <div
+      className="bg-cover bg-center bg-no-repeat min-h-screen"
+      style={{ backgroundImage: "url('/background.png')" }}
+    >
+      <Hero />
+      <Web3 />
+      <Engineering />
+      <Trainings />
+    </div>
   );
 }

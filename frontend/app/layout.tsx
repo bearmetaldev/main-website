@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Web3 from "./components/web3";
-import Engineering from "./components/engineering";
-import Trainings from "./trainings";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +19,6 @@ export default function RootLayout({
     <html lang="en" data-theme="night">
       <body className={inter.className}>
         <Navbar />
-        <Hero />
-        <Web3 />
-        <Engineering />
-        <Trainings />
         {children}
       </body>
     </html>

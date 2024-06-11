@@ -1,7 +1,7 @@
 export default function Engineering() {
   return (
     <div
-      className="hero min-h-fit p-20 bg-bottom bg-cover bg-no-repeat"
+      className="hero min-h-fit p-20 bg-fill bg-no-repeat shadow-xl"
       style={{
         background: `linear-gradient(76deg, rgba(15, 17, 26, 0.00) 5.7%, rgba(15, 17, 26, 0.53) 16.4%, #0F111A 41.85%), url('/engineering.jpeg')`,
       }}

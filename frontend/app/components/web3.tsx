@@ -8,7 +8,7 @@ export default function Web3() {
     >
       <div className="hero-content text-center text-neutral-content">
         <div>
-          <h1 className="mb-5 text-5xl font-bold pb-5">WEB3</h1>
+          <h1 className="mb-5 pb-5">WEB3</h1>
           <div className="columns-2">
             <p className="text-left left-0 pt-5">
               Lorem ipsum dolor sit amet consectetur. Blandit ultrices lacus

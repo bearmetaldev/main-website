@@ -6,7 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lexend: ["Lexend", "sans-serif"],
+        zilla: ["Zilla", "serif"],
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {

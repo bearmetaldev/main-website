@@ -1,3 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+}
+
+p {
+  font-family: "Zilla Slab", serif;
+  font-size: 24px;
+}
+
+a {
+  font-family: "Lexend", sans-serif;
+}
+
+button {
+  font-family: "Lexend", sans-serif;
+}
+
+.btn-secondary {
+  font-weight: 300;
+  font-size: 22px;
+  padding: 24px;
+  height: auto;
+  border-radius: 40px;
+  background-color: #21192f;
+  box-shadow: 10px 10px 20px rgba(33, 25, 47, 0.2);
+  margin-top: 40px;
+}
+
+button.contact-button {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px 24px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #3e2375;
+  box-shadow: 10px 10px 20px rgba(33, 25, 47, 0.2);
+  margin-top: -6px;
+}
+
+.contact-info {
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+}
+
+input {
+  font-family: "Lexend", sans-serif;
+}

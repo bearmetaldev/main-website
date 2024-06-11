@@ -8,7 +8,7 @@ export default function Engineering() {
     >
       <div className="hero-content text-center text-neutral-content">
         <div>
-          <h1 className="mb-5 text-5xl font-bold pb-5">ENGINEERING</h1>
+          <h1 className="mb-5 pb-5">ENGINEERING</h1>
           <div className="columns-2">
             <p className="invisible">
               Lorem ipsum dolor sit amet consectetur. Blandit ultrices lacus

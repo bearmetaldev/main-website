@@ -18,7 +18,7 @@ export default function Hero() {
             Enim velit at pellentesque blandit sem ullamcorper tempor. Non
             natoque in nulla nibh.
           </p>
-          <button className="btn btn-secondary mt-5">CONTACT US</button>
+          <button className="btn btn-secondary mt-5">contact us</button>
         </div>
       </div>
     </div>

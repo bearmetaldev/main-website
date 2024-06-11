@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="pb-20 bg-transparent text-center">
-      <h1 className="mb-5">CONTACT</h1>
+    <div className="pb-20 bg-gradient-to-t from-slate-900 to-transparent text-center">
+      <h1 className="mb-5">Contact</h1>
       <div className="flex justify-center m-24">
         <div className="card w-auto h-auto bg-gradient-to-br from-indigo-950 to-transparent shadow-lg place-items-center">
           <div className="columns-2 flex items-center justify-center">

@@ -9,15 +9,22 @@ h1 {
   font-family: "Lexend", sans-serif;
   font-weight: 400;
   font-size: 72px;
+  color: #ececec;
 }
 
 p {
   font-family: "Zilla Slab", serif;
   font-size: 24px;
+  color: #ececec;
 }
 
 a {
   font-family: "Lexend", sans-serif;
+  color: #ececec;
+}
+
+a.btn {
+  color: #ececec;
 }
 
 button {
@@ -33,6 +40,7 @@ button {
   background-color: #21192f;
   box-shadow: 10px 10px 20px rgba(33, 25, 47, 0.2);
   margin-top: 40px;
+  color: #ececec;
 }
 
 button.contact-button {
@@ -49,6 +57,7 @@ button.contact-button {
 .contact-info {
   font-family: "Lexend", sans-serif;
   font-size: 16px;
+  color: #ececec;
 }
 
 input {

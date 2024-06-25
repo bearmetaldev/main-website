@@ -20,6 +20,7 @@ module.exports = {
         night: {
           ...require("daisyui/src/theming/themes")["night"],
           secondary: "#482A88",
+          color0F111A: "#0F111A",
         },
       },
     ],

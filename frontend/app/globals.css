@@ -29,6 +29,10 @@ a {
   font-size: 16px;
 }
 
+.flipnav {
+  background-color: #0f111a;
+}
+
 a.btn {
   color: #ececec;
 }

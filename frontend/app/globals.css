@@ -15,7 +15,7 @@ h1 {
 p {
   font-family: "Zilla Slab", serif;
   font-size: 24px;
-  color: #ececec;
+  color: slate-300;
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 }
 
 .flipnav {
-  background-color: #0f111a;
+  background-color: rgb(2 6 23);
 }
 
 a.btn {

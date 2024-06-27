@@ -5,7 +5,7 @@ import EngineeringContent from "./engineering-content";
 
 export default function Engineering() {
   return (
-    <div className="snap-start h-screen overflow-hidden">
+    <div className="snap-start h-screen overflow-hidden" id="engineering">
       <EngineeringContent />
     </div>
   );

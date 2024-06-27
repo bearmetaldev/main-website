@@ -7,7 +7,10 @@ import BackgroundGrid from "./background-grid";
 
 export default function Contact() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center snap-start overflow-hidden bg-slate-950 pb-40">
+    <section
+      className="relative min-h-screen flex items-center justify-center snap-start overflow-hidden bg-slate-950"
+      id="contact"
+    >
       <BackgroundGrid />
       <div className="container mx-auto px-4 z-10">
         <motion.h1

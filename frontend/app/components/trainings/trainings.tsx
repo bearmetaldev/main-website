@@ -6,7 +6,10 @@ import AnimatedBackground from "./animated-background";
 
 export default function Trainings() {
   return (
-    <div className="snap-start h-screen overflow-hidden bg-slate-950 relative">
+    <div
+      className="snap-start h-screen overflow-hidden bg-slate-950 relative"
+      id="trainings"
+    >
       <AnimatedBackground />
       <TrainingsContent />
     </div>

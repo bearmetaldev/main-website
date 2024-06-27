@@ -12,7 +12,6 @@ export default function Page() {
         className="relative snap-y snap-mandatory bg-no-repeat h-screen overflow-y-scroll"
         style={{ backgroundImage: "url('/background.png')" }}
       >
-        <Navbar />
         <Hero />
         <Web3 />
         <Engineering />

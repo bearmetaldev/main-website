@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import NavRight from "./NavRight";
+import NavRight from "./nav-right";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);

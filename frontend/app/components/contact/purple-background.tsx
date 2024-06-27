@@ -1,4 +1,3 @@
-// components/contact/PurpleBackground.tsx
 import { motion } from "framer-motion";
 
 export default function PurpleBackground() {

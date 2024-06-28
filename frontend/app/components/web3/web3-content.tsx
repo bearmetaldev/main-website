@@ -3,19 +3,21 @@ import Image from "next/image";
 
 export default function Web3Content() {
   return (
-    <div className="relative z-20 flex flex-col md:flex-row items-center justify-between w-full">
-      <div className="md:w-1/2 mb-8 md:mb-0">
+    <div className="relative z-20 flex flex-col lg:flex-row items-center justify-between w-full">
+      <div className="w-full lg:w-1/2 mb-8 lg:mb-0 relative">
         <Image
           src="/web3-illustration.png"
           width={514}
           height={387}
           alt="web3-illustration"
-          className="max-w-full h-auto"
+          className="max-w-full h-auto object-contain"
         />
       </div>
-      <div className="md:w-1/2 md:pl-8">
-        <h1 className="mb-3 leading-tight text-center">Web3</h1>
-        <p className="my-6 max-w-xl text-center text-base leading-snug md:text-lg md:leading-relaxed">
+      <div className="lg:w-1/2 lg:pl-8">
+        <h1 className="mb-3 leading-tight text-center lg:text-left drop-shadow-xl">
+          Web3
+        </h1>
+        <p className="my-6 max-w-xl text-center lg:text-left text-base leading-snug lg:text-lg lg:leading-relaxed drop-shadow-xl">
           Lorem ipsum dolor sit amet consectetur. Blandit ultrices lacus turpis
           rhoncus. Neque lectus at vitae feugiat eget eu cursus venenatis.
           Vestibulum rhoncus sed consectetur mollis et. Adipiscing porta

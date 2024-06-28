@@ -121,9 +121,31 @@ input {
     display: flex;
     justify-content: center;
   }
+  #web3 .relative {
+    position: relative;
+  }
+
+  #web3 .relative > div:first-child {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+  }
+
+  #web3 .relative > div:last-child {
+    position: relative;
+    z-index: 10;
+    padding: 2rem;
+  }
+
+  #web3 p {
+    font-size: 18px;
+  }
 }
 
-/* Adjust font sizes for very small screens */
+/* Adjust font sizes for phone screens */
 @media (max-width: 640px) {
   h1,
   .hero-title-wrapper span {

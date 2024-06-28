@@ -20,10 +20,10 @@ export default function AnimatedBackground() {
   const spots: Spot[] = [
     { color: "bg-purple-500", size: "w-96 h-96" },
     { color: "bg-blue-500", size: "w-80 h-80" },
-    { color: "bg-yellow-500", size: "w-104 h-104" },
-    { color: "bg-pink-100", size: "w-88 h-88" },
+    { color: "bg-yellow-600", size: "w-96 h-96" },
+    { color: "bg-pink-500", size: "w-88 h-88" },
     { color: "bg-cyan-500", size: "w-72 h-72" },
-    { color: "bg-violet-500", size: "w-64 h-64" },
+    { color: "bg-red-500", size: "w-64 h-64" },
   ];
 
   const quadrants: Quadrant[] = [

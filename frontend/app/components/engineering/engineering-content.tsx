@@ -16,7 +16,7 @@ export default function EngineeringContent() {
   useEffect(() => {
     animate(color, COLORS_TOP, {
       ease: "easeInOut",
-      duration: 10,
+      duration: 5,
       repeat: Infinity,
       repeatType: "mirror",
     });

@@ -21,7 +21,7 @@ export default function Contact() {
         >
           Contact
         </motion.h1>
-        <div className="flex flex-wrap items-start justify-between mx-40">
+        <div className="flex flex-wrap items-start justify-between mx-52">
           <ContactInfo />
           <div className="w-full lg:w-3/5 mt-8 lg:mt-0">
             <ContactForm />

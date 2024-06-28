@@ -10,7 +10,7 @@ export default function Web3() {
       className="snap-start relative overflow-hidden bg-slate-950 text-slate-200 h-screen"
       id="web3"
     >
-      <div className="mx-10 gap-20 max-w-7xl px-4 md:px-8 h-full flex items-center">
+      <div className="mx-auto gap-20 max-w-7xl px-4 md:px-8 h-full flex items-center">
         <Web3Content />
       </div>
       <BGGrid />

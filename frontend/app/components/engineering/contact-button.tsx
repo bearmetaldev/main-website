@@ -8,7 +8,7 @@ interface ContactButtonProps {
 
 export default function ContactButton({ color }: ContactButtonProps) {
   const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  const boxShadow = useMotionTemplate`0px 0px 24px ${color}`;
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -31,7 +31,7 @@ export default function ContactButton({ color }: ContactButtonProps) {
       whileTap={{
         scale: 0.985,
       }}
-      className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+      className="group relative flex w-fit items-center gap-1.5 rounded-full bg-slate-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-slate-950/50"
     >
       Contact us
       <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />

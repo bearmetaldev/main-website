@@ -6,11 +6,17 @@ import { motion } from "framer-motion";
 export default function Beams() {
   const placements = [
     { top: 0, left: "5%", delay: 2 },
-    { top: 384, left: "15%", delay: 4 },
-    { top: 96, left: "25%", delay: 0 },
-    { top: 288, left: "75%", delay: 3.5 },
-    { top: 0, left: "70%", delay: 1 },
-    { top: 64, left: "95%", delay: 5 },
+    { top: 350, left: "15%", delay: 4 },
+    { top: 100, left: "25%", delay: 0 },
+    { top: 300, left: "75%", delay: 3.5 },
+    { top: 500, left: "70%", delay: 1 },
+    { top: 500, left: "95%", delay: 5 },
+    { top: 100, left: "80%", delay: 3 },
+    { top: 400, left: "50%", delay: 1 },
+    { top: 500, left: "20%", delay: 4 },
+    { top: 100, left: "85%", delay: 2 },
+    { top: 200, left: "10%", delay: 0.5 },
+    { top: 250, left: "60%", delay: 5 },
   ];
 
   return (
@@ -37,7 +43,7 @@ function Beam({ top, left, delay }: BeamProps) {
         ease: "easeInOut",
         duration: 3,
         repeat: Infinity,
-        repeatDelay: 1.5,
+        repeatDelay: 0.5,
         delay,
       }}
       style={{ top, left }}

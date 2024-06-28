@@ -5,6 +5,21 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: screen;
+}
+
+body {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
 h1 {
   font-family: "Lexend", sans-serif;
   font-weight: 400;
@@ -72,4 +87,50 @@ button.contact-button {
 
 input {
   font-family: "Lexend", sans-serif;
+}
+
+.responsive-navbar-button:hover {
+  color: rgb(167 139 250);
+}
+
+/* Media query for screens smaller than 11" (1024px) */
+@media (max-width: 1023px) {
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content > div {
+    position: static !important;
+    width: 100% !important;
+    padding-top: 40px;
+    transform: none !important;
+  }
+
+  .hero-title-wrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .hero-title-wrapper span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Adjust font sizes for very small screens */
+@media (max-width: 640px) {
+  h1,
+  .hero-title-wrapper span {
+    font-size: 42px !important;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }

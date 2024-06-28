@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function HeroButton() {
   return (
-    <div className="grid bg-transparent p-4">
+    <div className="grid bg-transparent py-4">
       <GradientShadowButton />
     </div>
   );

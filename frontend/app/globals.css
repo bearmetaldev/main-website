@@ -143,6 +143,10 @@ input {
   #web3 p {
     font-size: 18px;
   }
+
+  #trainings p {
+    font-size: 18px;
+  }
 }
 
 /* Adjust font sizes for phone screens */
@@ -154,5 +158,9 @@ input {
 
   p {
     font-size: 18px;
+  }
+
+  #trainings p {
+    font-size: 12px;
   }
 }

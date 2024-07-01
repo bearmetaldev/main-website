@@ -1,11 +1,10 @@
 import React from "react";
 
 export default function HeroDescription() {
-  return (
-    <p className="my-8 md:my-16 lg:my-5 lg:text-left md:text-center">
-      Lorem ipsum dolor sit amet consectetur. Urna metus mauris vel elit dui in
-      hac. Dictum nec feugiat scelerisque nec lobortis tortor mi. Viverra arcu
-      lacus ultricies habitant neque justo fusce justo magna.
-    </p>
-  );
+    return (
+        <p className="my-8 md:my-16 lg:my-5 lg:text-left md:text-center">
+            Whether you need to enhance existing systems or build complex software products from scratch,
+            we have the skills and experience to exceed your expectations and unlock your project&apos;s full potential.
+        </p>
+    );
 }

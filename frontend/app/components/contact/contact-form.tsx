@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function ContactForm() {
   return (
     <motion.div
-      className="relative p-8 rounded-lg bg-opacity-10 backdrop-blur-sm overflow-hidden border-2 border-t-slate-900/50 border-l-slate-900/50 border-b-slate-300/10 border-r-slate-300/10"
+      className="relative p-8 rounded-lg bg-opacity-10 lg:w-full backdrop-blur-sm overflow-hidden border-2 border-t-slate-900/50 border-l-slate-900/50 border-b-slate-300/10 border-r-slate-300/10"
       style={{
         background:
           "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.05))",
@@ -23,21 +23,21 @@ export default function ContactForm() {
           <input
             type="email"
             placeholder="Email address"
-            className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-[inset_-8px_-8px_14px_rgba(0,0,0,0.1)]"
+            className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-inner"
           />
         </div>
         <div className="w-full mb-4">
           <input
             type="tel"
             placeholder="Phone number"
-            className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-[inset_-8px_-8px_14px_rgba(0,0,0,0.1)]"
+            className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-inner"
           />
         </div>
         <div className="w-full mb-4">
           <textarea
             placeholder="Your message"
             rows={4}
-            className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-[inset_-8px_-8px_14px_rgba(0,0,0,0.1)]"
+            className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-inner"
           ></textarea>
         </div>
         <div className="w-full flex justify-end">

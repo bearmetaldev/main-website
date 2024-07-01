@@ -147,6 +147,15 @@ input {
   #trainings p {
     font-size: 18px;
   }
+
+  #contact h1 {
+    font-size: 48px;
+    margin-bottom: 2rem;
+  }
+
+  #contact .container {
+    padding: 2rem 1rem;
+  }
 }
 
 /* Adjust font sizes for phone screens */
@@ -161,6 +170,37 @@ input {
   }
 
   #trainings p {
+    font-size: 12px;
+  }
+
+  #contact h1 {
+    font-size: 36px;
+  }
+
+  #contact .container {
+    padding: 1rem;
+  }
+
+  #contact p {
+    font-size: 12px;
+    line-height: 1rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #contact strong {
+    font-weight: 600;
+  }
+
+  #contact input {
+    font-size: 12px;
+  }
+
+  #contact textarea {
+    font-size: 12px;
+  }
+
+  #contact button {
     font-size: 12px;
   }
 }

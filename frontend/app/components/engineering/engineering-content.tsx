@@ -16,7 +16,7 @@ export default function EngineeringContent() {
   useEffect(() => {
     animate(color, COLORS_TOP, {
       ease: "easeInOut",
-      duration: 5,
+      duration: 10,
       repeat: Infinity,
       repeatType: "mirror",
     });
@@ -33,7 +33,7 @@ export default function EngineeringContent() {
     >
       <div className="relative z-10 flex flex-col items-center">
         <h1 className="mb-3 leading-tight text-center"> Engineering</h1>
-        <p className="my-6 max-w-xl text-center text-base leading-snug md:text-lg md:leading-relaxed">
+        <p className="my-6 max-w-xl text-center text-lg leading-snug lg:leading-relaxed font">
           Lorem ipsum dolor sit amet consectetur. Blandit ultrices lacus turpis
           rhoncus. Neque lectus at vitae feugiat eget eu cursus venenatis.
           Vestibulum rhoncus sed consectetur mollis et. Adipiscing porta

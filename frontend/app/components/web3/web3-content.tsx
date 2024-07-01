@@ -17,7 +17,7 @@ export default function Web3Content() {
         <h1 className="mb-3 leading-tight text-center lg:text-left drop-shadow-xl">
           Web3
         </h1>
-        <p className="my-6 max-w-xl text-center lg:text-left text-base leading-snug lg:text-lg lg:leading-relaxed drop-shadow-xl">
+        <p className="my-6 max-w-xl text-center lg:text-left text-lg leading-snug lg:leading-relaxed drop-shadow-xl">
           Lorem ipsum dolor sit amet consectetur. Blandit ultrices lacus turpis
           rhoncus. Neque lectus at vitae feugiat eget eu cursus venenatis.
           Vestibulum rhoncus sed consectetur mollis et. Adipiscing porta

@@ -1,33 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: screen;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+h1 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  color: #ececec;
+}
+
+p {
+  font-family: "Zilla Slab", serif;
+  font-size: 24px;
+  color: slate-300;
+}
+
+a {
+  font-family: "Lexend", sans-serif;
+  color: #ececec;
+}
+
+.navlink {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.flipnav {
+  background-color: rgb(2 6 23);
+}
+
+a.btn {
+  color: #ececec;
+}
+
+button {
+  font-family: "Lexend", sans-serif;
+}
+
+.btn-secondary {
+  font-weight: 300;
+  font-size: 22px;
+  padding: 24px;
+  height: auto;
+  border-radius: 40px;
+  background-color: #21192f;
+  box-shadow: 10px 10px 20px rgba(33, 25, 47, 0.2);
+  margin-top: 40px;
+  color: #ececec;
+}
+
+button.contact-button {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px 24px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #3e2375;
+  box-shadow: 10px 10px 20px rgba(33, 25, 47, 0.2);
+  margin-top: -6px;
+}
+
+.contact-info {
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  color: #ececec;
+}
+
+input {
+  font-family: "Lexend", sans-serif;
+}
+
+.responsive-navbar-button:hover {
+  color: rgb(167 139 250);
+}
+
+/* Media query for screens smaller than 11" (1024px) */
+@media (max-width: 1023px) {
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content > div {
+    position: static !important;
+    width: 100% !important;
+    padding-top: 40px;
+    transform: none !important;
+  }
+
+  .hero-title-wrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .hero-title-wrapper span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  #web3 .relative {
+    position: relative;
+  }
+
+  #web3 .relative > div:first-child {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+  }
+
+  #web3 .relative > div:last-child {
+    position: relative;
+    z-index: 10;
+    padding: 2rem;
+  }
+
+  #web3 p {
+    font-size: 18px;
+  }
+
+  #trainings p {
+    font-size: 18px;
+  }
+
+  #contact h1 {
+    font-size: 48px;
+    margin-bottom: 2rem;
+  }
+
+  #contact .container {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Adjust font sizes for phone screens */
+@media (max-width: 640px) {
+  h1,
+  .hero-title-wrapper span {
+    font-size: 42px !important;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #trainings p {
+    font-size: 12px;
+  }
+
+  #contact h1 {
+    font-size: 36px;
+  }
+
+  #contact .container {
+    padding: 1rem;
+  }
+
+  #contact p {
+    font-size: 12px;
+    line-height: 1rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #contact strong {
+    font-weight: 600;
+  }
+
+  #contact input {
+    font-size: 12px;
+  }
+
+  #contact textarea {
+    font-size: 12px;
+  }
+
+  #contact button {
+    font-size: 12px;
   }
 }

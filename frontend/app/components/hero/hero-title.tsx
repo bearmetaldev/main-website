@@ -15,14 +15,14 @@ export default function HeroTitle() {
         className="text-stone-200 text-[70px] font-bold"
         style={{ fontFamily: "Lexend" }}
       >
-        Lorem ipsum dolor sit{" "}
+        Elevating{" "}
       </span>
       <span className="text-[70px] font-bold" style={gradientStyle}>
-        amet
+        software
       </span>
       <span className="text-[70px] font-bold" style={gradientStyle}>
         {" "}
-        consectetur.
+          performance.
       </span>
     </div>
   );

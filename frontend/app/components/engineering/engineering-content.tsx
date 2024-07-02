@@ -34,7 +34,7 @@ export default function EngineeringContent() {
             <div className="relative z-10 flex flex-col items-center">
                 <h1 className="mb-3 leading-tight text-center"> Engineering</h1>
                 <p className="my-6 max-w-xl text-center text-lg leading-snug lg:leading-relaxed font">
-                    Beyond Web3, our engineering prowess extends to a wide array of complex systems and applications. We
+                    Beyond Web3, our engineering skills extend to a wide array of complex systems and applications. We
                     bring extensive experience in Real-Time Operating Systems (RTOS), crafting solutions where timing
                     and reliability are critical. Our expertise in high-performance C++ has been instrumental in
                     developing cutting-edge computer vision systems. We&apos;ve tackled projects ranging from embedded
@@ -43,7 +43,7 @@ export default function EngineeringContent() {
                     and designing fault-tolerant architectures.
                     Whether you&apos;re working on autonomous vehicles, industrial automation, or any system requiring
                     precise control and high performance, we have the expertise to deliver outstanding results.
-                    Let us help you turn your most ambitious engineering challenges into reality.
+                    Together, let&apos;s bring your most ambitious engineering challenges to reality.
                 </p>
                 <ContactButton color={color}/>
             </div>

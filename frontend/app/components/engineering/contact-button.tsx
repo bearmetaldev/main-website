@@ -31,7 +31,7 @@ export default function ContactButton({ color }: ContactButtonProps) {
       whileTap={{
         scale: 0.985,
       }}
-      className="mt-3 group relative flex w-fit items-center gap-1.5 rounded-full bg-slate-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-slate-950/50"
+      className="lg:text-xl mt-3 group relative flex w-fit items-center gap-1.5 rounded-full bg-slate-950/10 px-4 py-2 md:px-8 md:py-4 text-gray-50 transition-colors hover:bg-slate-950/50"
     >
       Contact us
       <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import NavRight from "./nav-right";
 import Logo from "./logo";
 import { FiMenu, FiX } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024); // Changed from 768 to 1024
+      setIsMobile(window.innerWidth < 1024);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -34,22 +35,56 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <Logo />
         {isMobile ? (
-          <button
+          <motion.button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-white focus:outline-none relative w-6 h-6"
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
-            {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-          </button>
+            <AnimatePresence initial={false}>
+              {isOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ opacity: 0, rotate: -90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  exit={{ opacity: 0, rotate: 90 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0"
+                >
+                  <FiX size={24} />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ opacity: 0, rotate: 90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  exit={{ opacity: 0, rotate: -90 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0"
+                >
+                  <FiMenu size={24} />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.button>
         ) : (
           <NavRight scrollToSection={scrollToSection} />
         )}
       </div>
-      {isMobile && isOpen && (
-        <div className="pb-32 bg-gradient-to-b from-slate-950 from-50% to-transparent mt-4">
-          <NavRight scrollToSection={scrollToSection} isMobile={true} />
-        </div>
-      )}
+      <AnimatePresence>
+        {isMobile && isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0, width: 0 }}
+            animate={{ opacity: 1, height: "auto", width: "auto" }}
+            exit={{ opacity: 0, height: 0, width: 0 }}
+            transition={{ duration: 0.3 }}
+            className="bg-gradient-to-b from-slate-950 from-90% to-transparent pb-4 pl-2 overflow-hidden absolute right-0"
+          >
+            <div className="p-4">
+              <NavRight scrollToSection={scrollToSection} isMobile={true} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

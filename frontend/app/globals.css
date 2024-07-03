@@ -201,3 +201,15 @@ input {
     font-size: 12px;
   }
 }
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
+
+@supports (-moz-appearance: none) {
+  .smooth-scroll {
+    scroll-snap-type: y proximity;
+  }
+}

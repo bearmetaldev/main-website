@@ -25,6 +25,7 @@ const GradientShadowButton = () => {
       <motion.button
         onClick={handleClick}
         className="relative z-10 rounded-lg bg-gradient-to-br from-indigo-500/50 to-fuchsia-500/50 p-0.5 duration-300 group-hover:scale-110"
+        aria-label="Contact us"
       >
         <a
           href="#contact"

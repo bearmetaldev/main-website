@@ -26,7 +26,7 @@ const TrainingCard: React.FC<TrainingCardProps> = ({
           />
         </div>
         <p className="relative z-10 text-center text-base leading-relaxed text-gray-200 trainings-description">
-          {content.split(" ").slice(0, 50).join(" ") + "..."}
+          {content.split(" ").slice(0, 50).join(" ")}
         </p>
       </div>
       <motion.div

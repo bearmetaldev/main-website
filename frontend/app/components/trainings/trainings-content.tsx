@@ -9,12 +9,12 @@ export default function TrainingsContent() {
         <TrainingCard
           icon="/rust-logo.png"
           title="Rust"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          content="Maybe you do not need to port everything to Rust, but you sure can! Learn how to use Rust, where it is relevant and how to port complex applications from other languages."
         />
         <TrainingCard
           icon="/git-logo.png"
           title="Git"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          content="Our popular Git course teaches practical Git-Fu to your team for the smallest to the largest projects. Learn to rebase without fear!"
         />
       </div>
     </div>

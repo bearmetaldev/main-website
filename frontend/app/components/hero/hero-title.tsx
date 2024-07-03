@@ -10,19 +10,16 @@ export default function HeroTitle() {
   };
 
   return (
-    <div className="hero-title-wrapper w-[674px] h-[220px] leading-none">
+    <div className="hero-title-wrapper w-[674px] h-auto leading-none">
       <span
         className="text-stone-200 text-[70px] font-bold"
         style={{ fontFamily: "Lexend" }}
       >
-        Elevating{" "}
-      </span>
-      <span className="text-[70px] font-bold" style={gradientStyle}>
-        software
+        Elevating software
       </span>
       <span className="text-[70px] font-bold" style={gradientStyle}>
         {" "}
-          performance.
+        performance.
       </span>
     </div>
   );

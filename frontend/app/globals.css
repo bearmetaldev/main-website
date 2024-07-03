@@ -140,17 +140,8 @@ input {
     padding: 2rem;
   }
 
-  #web3 p {
-    font-size: 18px;
-  }
-
   #trainings p {
     font-size: 18px;
-  }
-
-  #contact h1 {
-    font-size: 48px;
-    margin-bottom: 2rem;
   }
 
   #contact .container {
@@ -169,12 +160,17 @@ input {
     font-size: 18px;
   }
 
+  #engineering p {
+    font-size: 12px;
+  }
+
   #trainings p {
     font-size: 12px;
   }
 
   #contact h1 {
     font-size: 36px;
+    margin-bottom: 20px;
   }
 
   #contact .container {
@@ -186,6 +182,7 @@ input {
     line-height: 1rem;
     display: block;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   #contact strong {

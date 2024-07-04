@@ -21,10 +21,10 @@ export default function Web3Content() {
           From smart contract development to full-stack dApp creation, we cover
           every aspect of your Web3 project. We specialize in building robust
           infrastructure for blockchain networks, including custom node
-          implementations and consensus mechanisms. Whether you're launching a
+          implementations and consensus mechanisms. Whether you&apos;re launching a
           new token, creating a decentralized finance (DeFi) platform, or
           exploring novel blockchain use cases, our experience and technical
-          prowess will guide your project to success. Let's shape the
+          prowess will guide your project to success. Let&apos;s shape the
           decentralized future together.
         </p>
       </div>

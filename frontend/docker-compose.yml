@@ -1,0 +1,16 @@
+version: "3"
+services:
+  bearmetaldev-site:
+    image: bearmetaldev-site:staging
+    container_name: bearmetaldev-site-staging
+    restart: always
+    networks:
+      - bearmetaldev-staging
+      - caddy_bearmetaldev
+    environment:
+      PORT: "3003"
+
+networks:
+  caddy_bearmetaldev:
+    external: true
+  bearmetaldev-staging:

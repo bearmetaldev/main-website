@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     "Elevating software performance with expert engineering in Web3, RTOS, computer vision, and more. Contact us for cutting-edge solutions.",
   keywords:
     "software engineering, Web3, RTOS, computer vision, IoT, distributed systems",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

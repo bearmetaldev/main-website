@@ -5,7 +5,7 @@ export default function ContactInfo() {
         <p className="text-left mb-4 md:mx-12 text-lg">
           <strong>Email</strong>
           <br />
-          olivier@bearmetaldev.com
+          contact@bearmetaldev.com
         </p>
         {/* <p className="text-left md:mx-12 text-lg">
           <strong>Phone</strong>

@@ -5,15 +5,15 @@ export default function ContactInfo() {
         <p className="text-left mb-4 md:mx-12 text-lg">
           <strong>Email</strong>
           <br />
-          contact@example.com
+          olivier@bearmetaldev.com
         </p>
-        <p className="text-left md:mx-12 text-lg">
+        {/* <p className="text-left md:mx-12 text-lg">
           <strong>Phone</strong>
           <br />
           +1 234 567 8900
-        </p>
+        </p> */}
       </div>
-      <div className="w-1/2 lg:w-full">
+      {/* <div className="w-1/2 lg:w-full">
         <p className="text-left md:mx-12 text-lg">
           <strong>Address</strong>
           <br />
@@ -23,7 +23,7 @@ export default function ContactInfo() {
           <br />
           Country
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

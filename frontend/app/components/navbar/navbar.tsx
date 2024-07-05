@@ -31,7 +31,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="pb-16 bg-gradient-to-b from-slate-950 from-50% to-transparent text-white p-4 fixed w-full top-0 z-50">
+    <nav
+      className="pb-16 bg-gradient-to-b from-slate-950 from-50% to-transparent text-white p-4 fixed w-full top-0 z-50"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div className="container mx-auto flex justify-between items-center">
         <Logo />
         {isMobile ? (
@@ -77,7 +81,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto", width: "auto" }}
             exit={{ opacity: 0, height: 0, width: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-gradient-to-b from-slate-950 from-90% to-transparent pb-4 pl-2 overflow-hidden absolute right-0"
+            className="bg-gradient-to-b from-slate-950 from-90% to-transparent pb-4 pr-4 pl-2 overflow-hidden absolute right-0"
           >
             <div className="p-4">
               <NavRight scrollToSection={scrollToSection} isMobile={true} />

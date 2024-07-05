@@ -9,7 +9,7 @@ export default function Web3Content() {
           src="/web3-illustration.png"
           width={514}
           height={387}
-          alt="web3-illustration"
+          alt="Web3 illustration"
           className="max-w-full h-auto object-contain"
         />
       </div>

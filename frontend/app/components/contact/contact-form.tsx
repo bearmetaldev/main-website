@@ -11,11 +11,12 @@ export default function ContactForm() {
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <form className="flex flex-wrap">
+      <form className="flex flex-wrap" role="form" aria-label="Contact form">
         <div className="w-1/2 pr-2 mb-4">
           <input
             type="text"
             placeholder="Name"
+            aria-label="Name"
             className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-[inset_-8px_-8px_14px_rgba(0,0,0,0.1)]"
           />
         </div>
@@ -23,6 +24,7 @@ export default function ContactForm() {
           <input
             type="email"
             placeholder="Email address"
+            aria-label="Email address"
             className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-inner"
           />
         </div>
@@ -30,12 +32,14 @@ export default function ContactForm() {
           <input
             type="tel"
             placeholder="Phone number"
+            aria-label="Phone number"
             className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-inner"
           />
         </div>
         <div className="w-full mb-4">
           <textarea
             placeholder="Your message"
+            aria-label="Your message"
             rows={4}
             className="w-full p-2 bg-slate-500 bg-opacity-10 border-2 border-t-slate-900/50 border-l-slate-900/30 border-b-slate-300/10 border-r-slate-300/30 rounded-lg text-white placeholder-white placeholder-opacity-50 shadow-inner"
           ></textarea>
@@ -47,6 +51,7 @@ export default function ContactForm() {
               backgroundColor: "#1E1D4C",
             }}
             transition={{ duration: 0.3 }}
+            aria-label="Send message"
           >
             Send
           </motion.button>

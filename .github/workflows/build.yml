@@ -78,8 +78,9 @@ jobs:
           path: build/docker/
           retention-days: 1
 
-  # Deployment job
-  deploy:
+  # Deployment job (staging, on each push to main)
+  deploy-staging:
+    name: "deploy (staging)"
     if: github.ref == 'refs/heads/main'
     environment:
       name: staging
@@ -109,4 +110,38 @@ jobs:
           rsync -r -e "ssh -i ~/.ssh/id_rsa" build/docker/bearmetaldev-site.tar dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/bearmetaldev-site.tar
           ssh dev@staging.bearmetaldev.com docker load -i /home/dev/bearmetaldev.com/staging/bearmetaldev-site.tar
           ssh dev@staging.bearmetaldev.com docker tag bearmetaldev-site:${{github.run_number}} bearmetaldev-site:staging
-          ssh dev@staging.bearmetaldev.com docker-compose -f bearmetaldev.com/staging/docker-compose.yml up -d          
+          ssh dev@staging.bearmetaldev.com docker-compose -f bearmetaldev.com/staging/docker-compose.yml up -d
+
+  # Deployment job (prod, only for tags)
+  deploy-prod:
+    name: "deploy (prod)"
+    if: startsWith(github.ref, 'refs/tags/')
+    environment:
+      name: prod
+      url: https://bearmetaldev.com
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: docker-images
+          path: ./build/docker
+
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          sudo chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H bearmetaldev.com > ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
+
+      - name: Deploy to production environment
+        id: deployment
+        run: |
+          ssh dev@bearmetaldev.com mkdir -p /home/dev/bearmetaldev.com/prod
+          rsync -r -e "ssh -i ~/.ssh/id_rsa" build/docker/bearmetaldev-site.tar dev@bearmetaldev.com:/home/dev/bearmetaldev.com/prod/bearmetaldev-site.tar
+          ssh dev@bearmetaldev.com docker load -i /home/dev/bearmetaldev.com/prod/bearmetaldev-site.tar
+          ssh dev@bearmetaldev.com docker tag bearmetaldev-site:${{github.run_number}} bearmetaldev-site:prod
+          ssh dev@bearmetaldev.com docker-compose -f bearmetaldev.com/prod/docker-compose.yml up -d

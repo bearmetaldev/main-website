@@ -110,7 +110,7 @@ jobs:
           rsync -r -e "ssh -i ~/.ssh/id_rsa" build/docker/bearmetaldev-site.tar dev@staging.bearmetaldev.com:/home/dev/bearmetaldev.com/staging/bearmetaldev-site.tar
           ssh dev@staging.bearmetaldev.com docker load -i /home/dev/bearmetaldev.com/staging/bearmetaldev-site.tar
           ssh dev@staging.bearmetaldev.com docker tag bearmetaldev-site:${{github.run_number}} bearmetaldev-site:staging
-          ssh dev@staging.bearmetaldev.com docker-compose -f bearmetaldev.com/staging/docker-compose.yml up -d
+          ssh dev@staging.bearmetaldev.com docker compose -f bearmetaldev.com/staging/docker-compose.yml up -d
 
   # Deployment job (prod, only for tags)
   deploy-prod:
@@ -144,4 +144,4 @@ jobs:
           rsync -r -e "ssh -i ~/.ssh/id_rsa" build/docker/bearmetaldev-site.tar dev@bearmetaldev.com:/home/dev/bearmetaldev.com/prod/bearmetaldev-site.tar
           ssh dev@bearmetaldev.com docker load -i /home/dev/bearmetaldev.com/prod/bearmetaldev-site.tar
           ssh dev@bearmetaldev.com docker tag bearmetaldev-site:${{github.run_number}} bearmetaldev-site:prod
-          ssh dev@bearmetaldev.com docker-compose -f bearmetaldev.com/prod/docker-compose.yml up -d
+          ssh dev@bearmetaldev.com docker compose -f bearmetaldev.com/prod/docker-compose.yml up -d
